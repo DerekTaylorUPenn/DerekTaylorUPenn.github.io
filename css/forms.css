@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: 'Gloria Hallelujah', cursive; */
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/galaxy.jpg);
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: honeydew;
+}
+
+h1, legend{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+p {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+aside {
+	flex-basis: 33%;
+}
+
+fieldset {
+	border: 1px solid black;
+	border-radius: .5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+
+}
+
+label {
+	display:block;
+	/* border: 2px solid red; */
+}
+
+input:not([type="radio"]:not([type="checkbox"])), textarea{
+	/* border: 1px solid blue; */
+	padding: 0;
+	margin: .2rem 0 1rem .2rem;
+	display: block;
+	border-radius: .3rem;
+	border: 1px solid black;
+}
+
+textarea {
+	height: 10rem;
+	width: 20rem;
+}
+
+select {
+	font-size: 1rem;
+}
+
+button {
+	font-size: 1.3rem;
+	margin: .2rem 0 .2rem 0;
+	background-color: #bb342f;
+	color: whitesmoke;
+	border: 1px solid black;
+	border-radius: .3rem;
+	padding: 0.5rem;
+}
+
+button:hover {
+	background-color: whitesmoke;
+	color:black;
+}

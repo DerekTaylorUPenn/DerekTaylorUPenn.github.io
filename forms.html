@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form - By Rocket Banana Labs</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+				<input type="hidden" name="send_to" value="dmtaylor@seas.upenn.edu">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="name">Your name  </label>
+						<input type="text" id="name" name="name">
+					<label for="phone">Phone number</label>
+						<input type="tel" id="phone" name="phone" placeholder="start with 3 digit area code">
+					<label for="email">Email</label>
+						<input type="email" id="email" name="email">
+				</fieldset>
+				<fieldset>
+					
+					
+					<legend>About your abduction </legend>
+					<label for="req_date">Requested  date</label>
+						<input type="date" id="req_date" name="req_date">
+					<label for="num_people">How many people would you like abducted?</label>
+						<input type="number" min="1" max="10" id="num_people" name="num_people">
+
+					<!-- Begin the Radio buttons for type of uf0-->
+					<label for="ufo_type">What type of UFO do you prefer? </label>
+						<label>
+							<input type="radio" id="ufo_type" name="ufo_type" value="Classic">Classic Oval UFO
+						</label>
+						<label>
+							<input type="radio" id="ufo_type" name="ufo_type" value="Star_Wars">Star Wars-style Imperial cruiser
+						</label>
+						<label>
+							<input type="radio" id="ufo_type" name="ufo_type" value="Battlestar">Battlestar Galactica-style Viper
+						</label>
+						<label>
+							<input type="radio" id="ufo_type" name="ufo_type" value="Borg">Borg-style cube
+						</label>
+					
+					<!-- Begin the select for type of abduction-->
+					<label for="abduction_type">What type of abduction experience do you want?</label>
+						<select id="abduction_type" name="abduction_type">
+							<option selected> Select one option </option>
+							<option value="tour">Tour of the solar system</option>
+							<option value="dinner">Alien dinner and discussion</option>
+							<option value="dance">Alien dance lessons</option>
+							<option value = "whales">Whale watching</option>
+						</select>
+					
+					<label for="requests">Special requests:</label>
+						<textarea id="requests" name = requests>Hi!</textarea>
+
+					<label for="subscribe">
+						<input type="checkbox" id="subscribe" name="subscribe" value="true" checked> Add me to your email list!
+					</label>
+				</fieldset>
+				<button type="submit">Submit Form</submit>
+			</form>			
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.96597315949!2d-74.19236278423882!3d42.93684420647268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de619507edf49d%3A0xd45b7847e058c0ec!2sRiverlink%20Park!5e0!3m2!1sen!2sus!4v1640984199158!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
